@@ -33,14 +33,6 @@
 //   });
 
 function new1() {
-  console.log("Hii THis is new added by naman");
+  console.log("Hii THis is new added by naman")
+  
 }
-
-function inbranch() {
-  let id = setInterval(() => {
-    console.log("Inside setInterval");
-    clearInterval(id);
-  }, 1000);
-}
-
-inbranch();
