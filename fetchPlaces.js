@@ -35,3 +35,18 @@ const data = axios
 function new1() {
   console.log("Hii THis is new added by naman");
 }
+function customSetInterval(func, delay) {
+  function intervalFunction() {
+    func();
+    // setTimeout(intervalFunction, delay);
+  }
+
+  console.log("naman");
+  setTimeout(intervalFunction, delay);
+}
+
+function sayHello() {
+  console.log("Hello!");
+}
+
+customSetInterval(sayHello, 1000);
